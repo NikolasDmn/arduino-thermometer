@@ -6,9 +6,9 @@ A semi-complex arduino thermometer that uses an LCD to display the temperature (
 
 Since the display is quite bright if you want to sleep next to it there are two ways to activate the display
 
-### Light Level Detector
+### Dynamic Light Level Detector
 
-Using a photocell, the light levels of the room are taken into account. If he light levels are high enough then the display activates
+Using a photocell, the light levels of the room are taken into account. If the light levels are high enough then the display activates. On boot, the arduino stores the ambient light levels and uses that to determine what is acceptable. If the light levels go down, the LCD will close. If the specific threshold is not ideal, a simple reboot will readjust it.
 
 ### Sound Level Detector
 
